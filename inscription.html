@@ -1,0 +1,52 @@
+<html>
+    <head>    
+        <title>إضافة عضو</title>		
+		<script type="text/javascript" src="js/javascript.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+    <script language="JavaScript">
+        function valid(){
+		    var nom = document.bigform.nom.value;
+            var prenom = document.bigform.prenom.value;
+            var date_nes = document.bigform.date_nes.value;
+            var wilaya = document.bigform.wilaya.value;
+            var email = document.bigform.email.value ;
+            var password = document.bigform.password.value;
+            var password1 = document.bigform.password1.value;
+                        
+        if(!nom || !prenom|| !date_nes|| !wilaya|| !email || !password || !password1){
+            alert("!من فضلك إملئ كل العناصر");
+			
+        }
+        }
+    </script>
+	<script language="JavaScript">
+        function verif(){
+            var password = document.bigform.password.value;
+			var password1 = document.bigform.password1.value;
+        if(password != password1){
+            alert("!تأكد من كلمة المرور");
+        }
+        }
+    </script>
+    <body  background="images/pk.jpg">
+	<center>
+	  <h1><font color="yellow" size="7">عضو جديد</font></h1></br>
+	  <img  width="100" height="100" src="images/ajouter.jpg"></br></br>
+	  <form method="post" action="login.html" name="bigform">	     
+	    <table>
+	      	<tr><td><font color="#f50000" size="5">الإسم</font></td><td><input type="text" name="prenom" placeholder="الإسم"></td></tr>
+		    <tr><td><font color="#f50000" size="5">اللقب</font></td><td><input type="text" name="nom" placeholder="اللقب"></td></tr>
+		    <tr><td><font color="#f50000" size="5">تاريخ الميلاد</font></td><td><input type="date" name="date_nes"></td></tr>
+		    <tr><td><font color="#f50000" size="5">الولاية</font></td><td><input type="text" name="wilaya" placeholder="الولاية"></td></tr>
+		    <tr><td><font color="#f50000" size="5">البريد الإلكتروني</font></td><td><input type="email" name="email" placeholder="ex@gmail.com"></td></tr>
+		    <tr><td><font color="#f50000" size="5">كلمة المرور</font></td><td><input type="password" name="password" placeholder="كلمة السر"></td></tr>
+		    <tr><td><font color="#f50000" size="5">تأكيد كلمة المرور</font></td><td><input type="password" name="password1" placeholder=" تأكيد كلمة السر"></td></tr>
+	    </table>		
+		<button type="reset" class="button">Reset</button>	 
+	    <button type="submit" onmousedown="valid()" class="button">Connexion</button>	 
+	  </form>
+    </center> 
+	  
+    </body>
+</html>

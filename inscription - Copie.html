@@ -1,0 +1,27 @@
+<html>
+    <head>    
+        <title>إضافة عضو</title>		
+		<script type="text/javascript" src="js/javascript.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+    <body  background="images/pk.jpg">
+	<center>
+	  <h1><font color="yellow" size="7">عضو جديد</font></h1></br>
+	  <img  width="100" height="100" src="images/ajouter.jpg"></br></br>
+	  <form method="post" action="login.html" name="bigform" onsubmit="return verifForm(this)">	     
+	    <table>
+	      	<tr><td><font color="#f50000" size="5">الإسم</font></td><td><input type="text" name="prenom" placeholder="الإسم" onblur="verifPrenom(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">اللقب</font></td><td><input type="text" name="nom" placeholder="اللقب" onblur="verifNom(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">تاريخ الميلاد</font></td><td><input type="date" name="date_nes" onblur="verifDate(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">الولاية</font></td><td><input type="text" name="wilaya" placeholder="الولاية" onblur="verifWila(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">البريد الإلكتروني</font></td><td><input type="email" name="email" placeholder="ex@gmail.com" onblur="verifMail(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">كلمة المرور</font></td><td><input type="password" name="password" placeholder="كلمة السر" onblur="verifPseudo(this)"></td></tr>
+		    <tr><td><font color="#f50000" size="5">تأكيد كلمة المرور</font></td><td><input type="password" name="password1" placeholder=" تأكيد كلمة السر"onblur="verifPseudo1(this)"></td></tr>
+	    </table>		
+	   <button type="reset" class="button">Annuler</font></button>	 
+	   <button type="submit" onclick="verif()" class="button">Login</font></button>	 
+	  </form>
+    </center>
+	  
+    </body>
+</html>
